@@ -31,7 +31,7 @@
    - I also made sure to install all the required npm packages. For this app I had to require my keys.js file, node-spotify-api, request, fs, and moment. Moment.js was used very briefyly to convert the time of the event from a default format to a more easy to read format ("mm/dd/yyyy") in the band-in-town api response.
 
 ## Links
-- ![Spotify Screen Shot](/liri-node-app/images/NodeSpotifyScreenShot.png)
-- ![Band In Town Screen Shot](/liri-node-app/images/NodeBandInTownScreenShot.png)
-- ![OMDB Screen Shot](/liri-node-app/images/NodeOmbdScreenShot.png)
-- ![Do What It Says Screen Shot](/liri-node-app/images/NodeDoWhatItSaysScreenShot.png)
+- ![Spotify Screen Shot](images/NodeSpotifyScreenShot.png)
+- ![Band In Town Screen Shot](images/NodeBandInTownScreenShot.png)
+- ![OMDB Screen Shot](images/NodeOmbdScreenShot.png)
+- ![Do What It Says Screen Shot](images/NodeDoWhatItSaysScreenShot.png)
