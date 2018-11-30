@@ -29,12 +29,13 @@
    - In the design, we know we want to utilize three different api calls and be able to trigger each one by a specific call. For this step I went with a switch method. I passed the variable "action", which is set as my process argument second index, and each case in this method will call the function for that specific api needed to run. 
    - Now with the functions ready to be called, I began by logging the complete response. From the entire response I was able to use dotnotation to extract the specific data I wanted to showcase. The trick to this was having to use .parse method for the JSON response. Without parsing the data the response treated the data as one long string, so when you declared a specific index, it would only return "{" or "L" or whatever character landed on the requested index.
    - I also made sure to install all the required npm packages. For this app I had to require my keys.js file, node-spotify-api, request, fs, and moment. Moment.js was used very briefyly to convert the time of the event from a default format to a more easy to read format ("mm/dd/yyyy") in the band-in-town api response.
+   - The final challenge of this app was to be able to read a text file and have to app interprit the text into a command to run one of the api responces. To conquer this obstacle I used the built in node package "fs". Once I required fs, I was able to read the text file. I did a .split method that created an array and split the two phrases at the comma. I then ran a for loop and called the first index[0] equal to the action argument and the second index[1] equal to my node argument. The node argument is basically the search perameter wheather it be the band name, movie name, or track name.  
 
 ## Links
-Spotify Screen Shot
- ![Spotify Screen Shot](images/NodeSpotifyScreenShot.png "Spotify Screen Shot")
 Band In Town Screen Shot
  ![Band In Town Screen Shot](images/NodeBandInTownScreenShot.png "Band In Town Screen Shot")
+Spotify Screen Shot
+ ![Spotify Screen Shot](images/NodeSpotifyScreenShot.png "Spotify Screen Shot")
 OMDB Screen Shot
  ![OMDB Screen Shot](images/NodeOmbdScreenShot.png "OMDB Screen Shot")
 do-what-it-says Screen Shot
