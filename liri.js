@@ -32,11 +32,11 @@ initialize();
 function spotifyApi() {
     var spotify = new Spotify(keys.spotify);
 
-    spotify.search({ type: "track", query: nodeArg, limit: 1 }, function (error, response) {
+    spotify.search({ type: "track", query: nodeArg, limit: 1}, function (error, response) {
         if (error) {
             console.log(error);
         }
-        if (search) {
+        if (nodeArg) {
             console.log("---------------------")
             // this will display the artist name.
             console.log("Artist(s) name: " + response.tracks.items[0].artists[0].name);
